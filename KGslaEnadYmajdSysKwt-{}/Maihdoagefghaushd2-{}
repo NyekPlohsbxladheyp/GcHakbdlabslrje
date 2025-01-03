@@ -1,5 +1,5 @@
 
-local accountId = 1030614
+local accountId = 142
 local Player = game:GetService("Players")
 local allowPassThrough = false; -- Allow user through if error occurs, may reduce security
 local allowKeyRedeeming = false; -- Automatically check keys to redeem if valid
