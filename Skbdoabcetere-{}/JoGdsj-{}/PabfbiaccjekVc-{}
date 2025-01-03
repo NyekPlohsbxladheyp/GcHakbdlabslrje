@@ -67,5 +67,5 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/NyekPlohsbxladheyp/Gc
 end
 
 if isDungeon or isWaveDefense or isGrandGrotto then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NyekPlohsbxladheyp/GcHakbdlabslrje/refs/heads/Skhsfobsfh/Skbdoabcetere-%7B%7D/JoGdsj-%7B%7D/Dfakd-%7B%7D%7D'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NyekPlohsbxladheyp/GcHakbdlabslrje/refs/heads/Skhsfobsfh/Skbdoabcetere-%7B%7D/JoGdsj-%7B%7D/Laivshdv-%7B%7D'))()
 end
