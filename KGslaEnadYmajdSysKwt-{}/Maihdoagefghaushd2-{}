@@ -217,7 +217,7 @@ local verifyKey = function(key)
     end
 end
 
-local keyFileName = "UnknownHubXUniversal/KeyHub.txt"
+local keyFileName = "UnknownHubXUniversal/SavedKey.txt"
 
 -- Function to save the correct key to a file
 local function saveKeyToFile(key)
@@ -294,7 +294,7 @@ local icon = Instance.new("ImageLabel")
 icon.Size = UDim2.new(0.1, 0, 0.2, 0) -- Set bigger size
 icon.Position = UDim2.new(0.65, 0, -0.1, 0) -- Adjust position
 icon.Image = "rbxassetid://73949062338801" -- Set icon asset id
-icon.Parent = frame
+icon.Parent = gui
 
 -- Function to handle correct key
 local function correctKeyFunction()
@@ -323,8 +323,10 @@ local function checkKey()
     local success = verifyKey(key);
     
    if success then
-        saveKeyToFile(key);
+        saveKeyToFile(textBox.Text);
         correctKeyFunction()
+        wait(1)
+        destroyGui()
     else
         incorrectKeyFunction()
     end
@@ -348,6 +350,8 @@ local function checkKeyFromFile()
         local success = verify(getkey)
         if success then
             correctKeyFunction()
+       else
+            incorrectKeyFunction()
         end
     end
 end
